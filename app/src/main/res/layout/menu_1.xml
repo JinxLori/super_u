@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_1"
+    android:background="@color/text_white"
+    android:clickable="true">
+    <!--设置为true防穿透点击事件-->
+
+
+    <!--<include layout="@layout/title"/>-->
+    <com.example.wsh666.materialtest1.Util.Title
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.example.wsh666.materialtest1.Util.Title>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/bg_black"-->
+        <!--/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1111"/>
+</LinearLayout>

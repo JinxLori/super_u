@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--group表示一个组，single表示选项只能单选-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_1"
+            android:icon="@drawable/up"
+            android:title="@string/h_menu1"/>
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@drawable/up"
+            android:title="@string/h_menu2"/>
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@drawable/up"
+            android:title="@string/h_menu3"/>
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@drawable/up"
+            android:title="@string/h_menu4"/>
+        <item
+            android:id="@+id/nav_5"
+            android:icon="@drawable/up"
+            android:title="@string/h_menu5"/>
+    </group>
+
+    <group android:id="@+id/nav_footer"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_feedback"
+            android:title="@string/h_menu_footer1" />
+        <item
+            android:id="@+id/action_sign_out"
+            android:title="@string/h_menu_footer2" />
+        <item
+            android:id="@+id/action_person"
+            android:title="@string/h_menu_footer3" />
+    </group>
+</menu>

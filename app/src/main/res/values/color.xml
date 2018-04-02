@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="indigo">#694E42</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="button_danger_pressed">#ffd2322d</color>
+    <color name="button_danger_edge">#ffd43f3a</color>
+    <color name="button_danger_disabled">#a5d9534f</color>
+    <color name="button_danger_disabled_edge">#a5d43f3a</color>
+    <color name="button_danger">#ffd9534f</color>
+    <color name="text_font_white">#FFFFFF</color>
+    <color name="tou_ming">#8000</color>
+
+</resources>

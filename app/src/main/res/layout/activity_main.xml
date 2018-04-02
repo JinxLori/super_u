@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    //主界面和滑动菜单界面
+<android.support.v4.widget.DrawerLayout
+
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //标题栏
+        <FrameLayout
+            android:id="@+id/ly_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <!--需要先将Styles.xml中的主题指定为不带ActionBar的主题-->
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+                <!--android:minHeight="60dp" />-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/hdmenu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/menu_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_topbar" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_topbar" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_channel"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_channel"
+                android:text="@string/tab_menu_alert" />
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_message"
+                android:text="@string/tab_menu_profile" />
+
+            <RadioButton
+                android:id="@+id/rb_better"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_better"
+                android:text="@string/tab_menu_pay" />
+
+            <RadioButton
+                android:id="@+id/rb_setting"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_setting"
+                android:text="@string/tab_menu_setting" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <!--DrawerLayout的第二个子布局，显示滑动菜单中的内容,第三行表示设置滑动菜单处的位置-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        />
+    <!--将上面的TextView替换成了NavigationView，并通过app:....将准备好的menu和headerLayout设置进来-->
+
+</android.support.v4.widget.DrawerLayout>
+
+
+    //滑动菜单选项碎片
+    <FrameLayout
+        android:id="@+id/menu_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</FrameLayout>
+
+

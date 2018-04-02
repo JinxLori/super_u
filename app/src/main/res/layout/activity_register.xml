@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.wsh666.materialtest1.Activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:background="@color/tou_ming"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+            android:id="@+id/r_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/text_white"
+            android:theme="@style/MyEditText"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/r_username"
+            />
+
+        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+            android:id="@+id/r_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r_username"
+            android:textColor="@color/pink"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/text_white"
+            android:theme="@style/MyEditText"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/r_email"/>
+
+        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+            android:id="@+id/r_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r_email"
+            android:textColor="@color/pink"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/text_white"
+            android:theme="@style/MyEditText"
+            android:inputType="textPassword"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/r_password"/>
+
+        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+            android:id="@+id/r_c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r_password"
+            android:textColor="@color/pink"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/text_white"
+            android:theme="@style/MyEditText"
+            android:inputType="textPassword"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/r_c_password"/>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r_c_password"
+            android:textColor="@color/text_white"
+            android:background="@drawable/circle_button"
+            android:textScaleX="2"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/register_button"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="15dp"
+            android:text="@string/register_foot"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_toRightOf="@id/text1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/text"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

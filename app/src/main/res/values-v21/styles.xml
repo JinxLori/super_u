@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Android5.0及以上才会访问这个文件 transparent表示状态栏颜色透明-->
+<resources>
+    <style name="FruitActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
