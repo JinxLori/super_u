@@ -19,5 +19,6 @@
     <color name="button_danger">#ffd9534f</color>
     <color name="text_font_white">#FFFFFF</color>
     <color name="tou_ming">#8000</color>
-
+    <color name="list">#ECE9E0</color>
+    <color name="duihua">#424548</color>
 </resources>

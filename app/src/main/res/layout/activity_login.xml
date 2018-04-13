@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.wsh666.materialtest1.Activity.LoginActivity">
+    tools:context="com.example.wsh666.homework.Activity.LoginActivity">
 
     <ImageView
         android:id="@+id/login_backgroud"
@@ -29,7 +29,7 @@
             android:textSize="30sp"
             android:text="@string/login_loge"/>
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:selectAllOnFocus="true"
             android:hint="@string/username"/>
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

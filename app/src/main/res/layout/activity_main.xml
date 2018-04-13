@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<FrameLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
@@ -22,7 +26,7 @@
         <FrameLayout
             android:id="@+id/ly_top_bar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="40dp">
             <!--需要先将Styles.xml中的主题指定为不带ActionBar的主题-->
             <!--<android.support.v7.widget.Toolbar-->
                 <!--android:id="@+id/toolbar"-->
@@ -35,12 +39,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_margin="10dp">
+                android:padding="5dp">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/hdmenu_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="true" />
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/header_image"/>
             </LinearLayout>
 
 
@@ -54,13 +59,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_margin="10dp">
+                android:layout_margin="5dp">
 
                 <ImageView
                     android:id="@+id/menu_image"
-                    android:layout_width="30dp"
+                    android:layout_width="20dp"
                     android:layout_height="30dp"
-                    android:clickable="true" />
+                    android:src="@drawable/menu"
+                    android:clickable="true"/>
             </LinearLayout>
 
         </FrameLayout>
@@ -86,7 +92,7 @@
         <RadioGroup
             android:id="@+id/rg_tab_bar"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="45dp"
             android:background="@color/bg_white"
             android:orientation="horizontal">
 
@@ -94,7 +100,7 @@
                 android:id="@+id/rb_channel"
                 style="@style/tab_menu_item"
                 android:drawableTop="@drawable/tab_menu_channel"
-                android:text="@string/tab_menu_alert" />
+                android:text="@string/tab_menu_pay" />
 
             <RadioButton
                 android:id="@+id/rb_message"
@@ -106,7 +112,7 @@
                 android:id="@+id/rb_better"
                 style="@style/tab_menu_item"
                 android:drawableTop="@drawable/tab_menu_better"
-                android:text="@string/tab_menu_pay" />
+                android:text="@string/tab_menu_alert" />
 
             <RadioButton
                 android:id="@+id/rb_setting"
@@ -136,9 +142,14 @@
         android:id="@+id/menu_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </FrameLayout>
 
 </FrameLayout>
+
+<include layout="@layout/pinglun"/>
+
+</RelativeLayout>
+
+
 
 

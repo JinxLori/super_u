@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.wsh666.materialtest1.Activity.RegisterActivity">
+    tools:context="com.example.wsh666.homework.Activity.RegisterActivity">
 
     <ImageView
         android:id="@+id/register_backgroud"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/r_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:hint="@string/r_username"
             />
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/r_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_marginEnd="30dp"
             android:hint="@string/r_email"/>
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/r_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:layout_marginEnd="30dp"
             android:hint="@string/r_password"/>
 
-        <com.example.wsh666.materialtest1.Util.EditTextWithDel
+        <com.example.wsh666.homework.Util.EditTextWithDel
             android:id="@+id/r_c_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
