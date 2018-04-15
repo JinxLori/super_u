@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    //评论框，设置为不可见
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pink"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_black"
+            android:id="@+id/view" />
+
+        <ImageView
+            android:id="@+id/hide_down"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/down"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/comment_send"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_button"
+            android:text="评论"
+            android:textSize="15sp"
+            android:textColor="@color/bg_black"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/comment_content_edittext"
+            android:hint="shuruneirong"
+            android:textSize="15sp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

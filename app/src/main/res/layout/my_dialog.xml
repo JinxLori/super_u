@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_dialog_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/bg_black"
+            android:textSize="20dp"
+            android:text="课程详细信息"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称：" />
+
+        <TextView
+            android:id="@+id/c_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/n"
+            android:text="xxxxx" />
+
+        <TextView
+            android:id="@+id/nn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/n"
+            android:layout_marginTop="10dp"
+            android:text="授课老师："/>
+        <TextView
+            android:id="@+id/c_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/nn"
+            android:layout_below="@id/n"
+            android:layout_marginTop="10dp"
+            android:text="ttttt"/>
+
+        <TextView
+            android:id="@+id/nnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c_teacher"
+            android:layout_marginTop="10dp"
+            android:text="上课地点:"/>
+
+        <TextView
+            android:id="@+id/c_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/nnn"
+            android:layout_below="@id/c_teacher"
+            android:layout_marginTop="10dp"
+            android:text="mmmm"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/c_m_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_button"
+        android:layout_margin="10dp"
+        android:textScaleX="1"
+        android:text="修改课程"/>
+
+</LinearLayout>

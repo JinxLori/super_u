@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/left_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/header_image"/>
+        <!--android:src="@drawable/header_image"-->
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            android:text="left"/>
+            <!--android:textColor="#313037"-->
+            <!--android:background="@drawable/message1"-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="right"
+            android:textSize="15sp"/>
+            <!--android:background="@drawable/message2" android:textColor="#313037"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/right_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/header_image"/>
+        <!--android:src="@drawable/header_image"-->
+
+    </LinearLayout>
+
+</LinearLayout>
