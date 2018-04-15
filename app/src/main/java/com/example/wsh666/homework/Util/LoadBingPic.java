@@ -27,19 +27,16 @@ public class LoadBingPic extends Activity {
             @Override
             //从服务器加载失败
             public void onFailure(Call call, IOException e) {
-//                SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(context);
-//                final String bingPic=pref.getString("bing_pic",null);
-//                if(bingPic!=null){
-//                    runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            Glide.with(context).load(bingPic).into(view);
-//                        }
-//                    });
-//                }
-//                else{
-//                    loadBingPic();
-//                }
+                SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(context);
+                final String bingPic=pref.getString("bing_pic",null);
+                if(bingPic!=null){
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Glide.with(context).load(bingPic).into(view);
+                        }
+                    });
+                }
                 e.printStackTrace();
             }
 

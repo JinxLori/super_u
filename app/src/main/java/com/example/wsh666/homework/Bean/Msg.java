@@ -2,6 +2,7 @@ package com.example.wsh666.homework.Bean;
 
 /**
  * Created by wsh666 on 2018/4/8.
+ * 消息界面列表的实体类
  */
 
 public class Msg {

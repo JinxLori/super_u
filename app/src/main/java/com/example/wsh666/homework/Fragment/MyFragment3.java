@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.Spinner;
@@ -14,11 +15,15 @@ import android.widget.TextView;
 
 import com.example.wsh666.homework.Adapter.GirdAdapter;
 import com.example.wsh666.homework.R;
+import com.example.wsh666.homework.Util.MyDialog;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * 课程详情显示的Dialog适配器中
+ */
 public class MyFragment3 extends Fragment {
 
 
@@ -37,6 +42,8 @@ public class MyFragment3 extends Fragment {
 
     private ArrayAdapter<String> spinnerAdapter;
 
+
+
     public MyFragment3() {
 
     }
@@ -54,6 +61,13 @@ public class MyFragment3 extends Fragment {
         girdAdapter = new GirdAdapter(mContext);
         girdAdapter.setContent(contents, 6, 7);
         detailCource.setAdapter(girdAdapter);
+//        detailCource.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//            }
+//        });
+
         //////////////创建Spinner数据
         fillDataList();
         spinnerAdapter = new ArrayAdapter<String>(mContext, android.R.layout.simple_spinner_dropdown_item, dataList);
@@ -62,7 +76,6 @@ public class MyFragment3 extends Fragment {
         Log.e("HEHE", "3日狗");
         return view;
     }
-
 
     public void fillStringArray() {
         contents = new String[6][7];

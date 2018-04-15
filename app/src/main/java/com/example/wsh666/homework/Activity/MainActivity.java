@@ -31,6 +31,7 @@ import com.example.wsh666.homework.Adapter.MyFragmentPagerAdapter;
 import com.example.wsh666.homework.Fragment.MenuFragment;
 import com.example.wsh666.homework.Fragment.MyFragment4;
 import com.example.wsh666.homework.R;
+import com.example.wsh666.homework.Util.MyDialog;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private ImageView hide_down;
     private EditText comment_content;
     private Button comment_send;
+
 
 
 
@@ -128,6 +130,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             }
         });
 
+
         //获取Navigation的实例，设置滑动菜单中的子项点击事件
         final NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
         navView.setCheckedItem(R.id.nav_1);//将第一个菜单项设为默认选中
@@ -177,8 +180,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 return true;
             }
         });
-
-
     }
 
     private void bindViews() {
@@ -217,7 +218,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
         }
     }
-
 
     //重写ViewPager页面切换的处理方法
     @Override

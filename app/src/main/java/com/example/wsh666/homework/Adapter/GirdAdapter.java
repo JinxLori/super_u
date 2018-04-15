@@ -9,11 +9,15 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.wsh666.homework.Activity.MainActivity;
+import com.example.wsh666.homework.Fragment.MyFragment3;
 import com.example.wsh666.homework.R;
+import com.example.wsh666.homework.Util.MyDialog;
 
 /**
  * Created by wsh666 on 2018/4/12.
  * GirdView的适配器
+ * 包含课程信息显示的Dialog
  */
 
 public class GirdAdapter extends BaseAdapter {
@@ -28,6 +32,8 @@ public class GirdAdapter extends BaseAdapter {
     private int columnTotal;
 
     private int positionTotal;
+    private MyDialog myDialog;
+
 
     public GirdAdapter(Context context) {
         this.mContext = context;
@@ -51,6 +57,7 @@ public class GirdAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
+
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -96,6 +103,11 @@ public class GirdAdapter extends BaseAdapter {
                 public void onClick(View v) {
                     int row = position / columnTotal;
                     int column = position % columnTotal;
+                    //显示课程信息的Dialog
+                    myDialog=new MyDialog(mContext,contents[row][column]);
+                    myDialog.setCancelable(true);//用户可以点击手机Back键取消对话框显示
+                    //myDialog.setCanceledOnTouchOutside(false);//用户不能通过点击对话框之外的地方取消对话框显示
+                    myDialog.show();
                     String con = "当前选中的是" + contents[row][column] + "课";
                     Toast.makeText(mContext, con, Toast.LENGTH_SHORT).show();
                 }

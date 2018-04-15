@@ -2,6 +2,7 @@ package com.example.wsh666.homework.Bean;
 
 /**
  * Created by wsh666 on 2018/4/4.
+ * 第四个碎片的列表实体类
  */
 
 public class List4 {

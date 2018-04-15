@@ -56,17 +56,17 @@ public class MyFragment4 extends Fragment {
         mData = new ArrayList<List4>();
         init();
 
-        // 初始化评论列表
-//        View pinglunView=inflater.inflate(R.layout.list_4, container, false);
-//        ListView comment_list = (ListView) pinglunView.findViewById(R.id.comment_list);
-//        // 初始化评论数据
-//        data = new ArrayList<>();
-//        // 初始化适配器
-//        adapterComment = new CommentAdepter(data);
-//        // 为评论列表设置适配器
-//        if (comment_list != null) {
-//            comment_list.setAdapter(adapterComment);
-//        }
+         //初始化评论列表
+        View pinglunView=inflater.inflate(R.layout.list_4, container, false);
+        ListView comment_list = (ListView) pinglunView.findViewById(R.id.comment_list);
+        // 初始化评论数据
+        data = new ArrayList<>();
+        // 初始化适配器
+        adapterComment = new CommentAdepter(data);
+        // 为评论列表设置适配器
+        if (comment_list != null) {
+            comment_list.setAdapter(adapterComment);
+        }
 
         //刷新
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.list1_refrash);
@@ -152,13 +152,13 @@ public class MyFragment4 extends Fragment {
 //        mData.add(new List4(userImageId,"username6","content6"));
 //        mData.add(new List4(userImageId,"username7","content7"));
         List4 list4[] = {
-                new List4(R.drawable.background, "username1", "content1"),
-                new List4(R.drawable.header_image, "username2", "content2"),
-                new List4(R.drawable.return_image, "username3", "content3"),
-                new List4(R.drawable.delete, "username4", "content4"),
-                new List4(R.drawable.dianzan, "username5", "content5"),
-                new List4(R.drawable.zhuanfa, "username6", "content6"),
-                new List4(R.drawable.tuijian, "username7", "content7")
+            new List4(R.drawable.background, "username1", "content1"),
+                    new List4(R.drawable.header_image, "username2", "content2"),
+                    new List4(R.drawable.return_image, "username3", "content3"),
+                    new List4(R.drawable.delete, "username4", "content4"),
+                    new List4(R.drawable.dianzan, "username5", "content5"),
+                    new List4(R.drawable.zhuanfa, "username6", "content6"),
+                    new List4(R.drawable.tuijian, "username7", "content7")
         };
         mData.clear();
         for (int i = 0; i < 20; i++) {

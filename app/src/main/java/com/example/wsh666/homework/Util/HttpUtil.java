@@ -5,6 +5,7 @@ import okhttp3.Request;
 
 /**
  * Created by wsh666 on 2018/3/15.
+ * HttpUtil
  */
 
 //用于和服务器进行交互，用的是OkHttp
